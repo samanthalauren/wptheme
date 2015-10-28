@@ -1,3 +1,24 @@
 footer {
 	clear: both;
+	background-color: lightgrey;
+	padding: 5px;
+	p {
+		text-align: center;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		font-size: .8rem;
+		padding:0;
+		margin: 0;
+	}
+}
+.footerNav {
+	margin: 0 auto;
+	padding-top: 10px;
+	width: 21%;
+	ul {
+		margin: 0 auto;
+	}
+	li {
+		margin: 0 auto;
+	}
 }

@@ -1,14 +1,29 @@
 ul.menu {
-	margin: 0;
+	margin: 5% 0;
 	padding: 0;
 	li {
 		display: inline;
-		margin-right: 10px;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		padding:0;
+		margin: 15px;
+		text-decoration: underline;
+		
 		a {
-			color: #333;
-			padding: 10px;
-			background: #333;
-			color: white;
+			padding: 5px;
+			color:  #7c9790;
+		}
+	}
+}
+
+
+.social {
+	ul {
+		float: right;
+		display: block;
+		margin: 15px 0;
+		li {
+			margin: 5px 15px;
 		}
 	}
 }

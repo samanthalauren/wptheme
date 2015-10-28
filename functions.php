@@ -22,8 +22,9 @@ function theme_setup() {
 	* You can allow clients to create multiple menus by
   * adding additional menus to the array. */
 	register_nav_menus( array(
-		'primary' => 'Primary Navigation'
+		'primary' => 'Primary Navigation', 'social' => 'social', 'footer' => 'footer'
 	) );
+
 
 	/*
 	 * Switch default core markup for search form, comment form, and comments
@@ -266,3 +267,5 @@ function get_post_parent($post) {
 		return $post->ID;
 	}
 }
+
+// show_admin_bar( false );

@@ -18,31 +18,73 @@
 Default Styling
 ====================================
 */
+	// font-family: 'Allura', cursive;
+	// font-family: 'Dawning of a New Day', cursive;
+	// font-family: 'Homemade Apple', cursive;
+	//font-family: 'Raleway', sans-serif;
+	//font-family: 'Josefin Sans', sans-serif;
 
 img {
 	max-width: 100%;
 }
 
 body {
-	color: #333;
+	
 }
 
 .container {
 	max-width: 1200px;
 	margin: 0 auto;
 }
-
 .content {
-	float: left;
-	width: 65%;
-	margin-right: 5%;
+	width: 60%;
+	margin: 0 auto;
+	text-align: center;
+	p {
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+		padding:0;
+		margin: 0;
+	}
 }
-
 .full {
-	width: 100%;
+	width: 70%;
+}
+//Hero Image
+.hero {
+	img {
+		margin: 0 auto;
+		width: 100%;
+		height: 100%;
+		margin-top: -50px;
+
+	}
 }
 
+//Header Styles
 
+.siteTitle {
+	font-family: 'Nothing You Could Do', cursive;
+	margin: 5% auto;
+	text-align: center;
+	// width: 25%;
+	line-height: 3.5rem;
+	font-size: 3rem;
+}
+
+//Page Styles
+
+h2 {
+	font-family: 'Nothing You Could Do', cursive;
+	color:  #7c9790;
+}
+.line {
+	width: 20%;
+	height: 2px;
+	background: #730526;
+	margin: 0 auto;
+	border-radius: 5%;
+}
 
 
 

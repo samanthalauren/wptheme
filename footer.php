@@ -1,6 +1,12 @@
 <footer>
   <div class="container">
-    <p>&copy; HackerYou <?php echo date('Y'); ?></p>
+	<div class="footerNav">
+		<?php wp_nav_menu( array(
+	      'container' => false,
+	      'theme_location' => 'footer'
+	    )); ?>
+	  </div>
+	   <p>&copy; Theme by Samantha Cross <?php echo date('Y'); ?></p>
   </div>
 </footer>
 
