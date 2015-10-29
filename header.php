@@ -19,14 +19,14 @@
 <body <?php body_class(); ?>>
 
 <header>
-
-  <div class="container">
-  <div class="social">
+ <div class="social">
      <?php wp_nav_menu( array(
       'container' => false,
       'theme_location' => 'social'
     )); ?>
   </div>
+  <div class="container">
+ <!--  <img src="<?php //echo bloginfo('template_url'); ?>/assets/brushstroke.jpg" alt="">   -->
     <h1 class="siteTitle">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
@@ -35,12 +35,7 @@
      <?php wp_nav_menu( array(
       'container' => false,
       'theme_location' => 'primary'
-    )); ?>
-    <div class="hero">
-      <?php the_post_thumbnail( $full, $attr ); ?> 
-    </div>
-
-   
+    )); ?> 
   </div> <!-- /.container -->
 </header><!--/.header-->
 

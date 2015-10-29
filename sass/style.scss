@@ -29,7 +29,7 @@ img {
 }
 
 body {
-	
+	background: #f7ece8;
 }
 
 .container {
@@ -37,7 +37,7 @@ body {
 	margin: 0 auto;
 }
 .content {
-	width: 60%;
+	width: 90%;
 	margin: 0 auto;
 	text-align: center;
 	p {
@@ -62,15 +62,31 @@ body {
 }
 
 //Header Styles
-
+header {
+	img {
+		width: 30%;
+		margin: 10px 400px;
+		padding: 0;
+	}
+}
 .siteTitle {
 	font-family: 'Nothing You Could Do', cursive;
-	margin: 5% auto;
+	margin: -160px auto 0;
 	text-align: center;
 	// width: 25%;
 	line-height: 3.5rem;
 	font-size: 3rem;
 }
+
+//Home Page 
+.featuredProducts {
+	margin: 15px ;
+	img {
+		width: 30%;
+		height: 500px;
+	}
+}
+
 
 //Page Styles
 

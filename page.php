@@ -1,7 +1,12 @@
 <?php get_header();  ?>
 
-<div class="main">
+<div class="main" id='main'>
   <div class="container">
+
+     <div class="hero">
+          <?php //the_post_thumbnail( $full, $attr ); ?> 
+     </div>
+
 
     <div class="content">
       <?php // Start the loop ?>
@@ -12,7 +17,7 @@
         <?php the_content(); ?>
 
       <?php endwhile; // end the loop?>
-      
+
     </div> <!-- /,content -->
 
   </div> <!-- /.container -->

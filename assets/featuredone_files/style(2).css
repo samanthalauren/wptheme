@@ -1,0 +1,180 @@
+html{
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Verdana", "Sans-Serif";
+}
+
+.banner_dimensions {width: 300px;height: 250px;}
+
+#banner {
+	position: absolute;
+	background-color: #ffffff;
+	cursor: pointer;
+	overflow: hidden; /* hidden or visible */
+	
+	background: url(bg.jpg);
+/*	margin:auto;*/
+}
+
+
+#hitarea {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	top:0;
+	left:0;
+	
+}
+
+#border {
+	position: absolute; left: 0; top: 0;
+	border: 1px solid rgba(0, 0, 0, .25);
+}
+
+.text-not-selectable {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.tint {
+	filter: sepia(1);
+	-webkit-filter: sepia(1);
+	-moz-filter: sepia(1);
+	-o-filter: sepia(1);
+	-ms-filter: sepia(1);
+}
+
+.transparent {
+	opacity:0; /*		 visibility: hidden;	*/
+	
+	zoom: 1;
+	filter: alpha(opacity=0); /* For IE8 and earlier */
+}
+
+.image_text {
+	position: absolute;
+}
+
+
+#txt1, #txt2{
+	top:20px;
+	left:20px;
+}
+
+#endFrame{
+	padding-left: 19px;
+}
+
+#txt3{
+	top:20px;
+}
+#product {
+	position: absolute;
+	top:70px;
+	/*left:-630px;*/ /* end: 125px */
+	
+
+	transform: translate(-635px, 0);
+	-webkit-transform: translate(-635px, 0);
+}
+
+#divider {
+	position: absolute;
+	background-color: #919191;
+	width:263px;
+	height:1px;
+	top:47px;
+}
+
+#txt4 {
+	top:58px;
+	left:18px;
+}
+
+#cta {
+	position: absolute;
+	top: 115px;
+}
+
+#cta_arrow {
+	position: absolute;
+	margin-top: -1.5px;
+	
+	width: 12px;
+	height: 12px;
+}
+
+#cta_text {
+	position: absolute;
+	left: 16px;
+	/* start: NApx; end: 14px */
+}
+
+#logo {
+	position: absolute;
+	top:206px;
+	left:17px;
+}
+
+
+/****************************************************************/
+
+
+
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cta_txt {
+    width: 76px;
+    height: 10px;
+    background-position: -5px -5px;
+}
+
+.sprite-logo {
+    width: 79px;
+    height: 28px;
+    background-position: -91px -5px;
+}
+
+.sprite-product {
+    width: 650px;
+    height: 177px;
+    background-position: -5px -43px;
+}
+
+.sprite-txt1 {
+    width: 229px;
+    height: 22px;
+    background-position: -180px -5px;
+}
+
+.sprite-txt2 {
+    width: 207px;
+    height: 22px;
+    background-position: -419px -5px;
+}
+
+.sprite-txt3 {
+    width: 263px;
+    height: 18px;
+    background-position: -5px -230px;
+}
+
+.sprite-txt4 {
+    width: 123px;
+    height: 39px;
+    background-position: -278px -230px;
+}
