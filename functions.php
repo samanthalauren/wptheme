@@ -53,7 +53,7 @@ function hackeryou_scripts() {
   	"http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js",
   	false, //dependencies
   	null, //version number
-  	true //load in footer
+  	false //load in footer
   );
 
   wp_enqueue_script(
@@ -287,4 +287,22 @@ function woocommerce_support() {
     add_theme_support( 'woocommerce' );
 }
 
-show_admin_bar( false );
+function woocommerce_fix() {
+
+if ( is_singular( 'product' ) ) {
+ woocommerce_content();
+}else{
+//For ANY product archive.
+//Product taxonomy, product search or /shop landing
+ woocommerce_get_template( 'archive-product.php' );
+}
+};
+
+
+/* Read More */
+function new_excerpt_more( $more ) {
+	return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">' . __( 'Read More', 'your-text-domain' ) . '</a>';
+}
+add_filter( 'excerpt_more', 'new_excerpt_more' );
+
+// show_admin_bar( false );

@@ -26,7 +26,8 @@
     )); ?>
   </div>
   <div class="container">
- <!--  <img src="<?php //echo bloginfo('template_url'); ?>/assets/brushstroke.jpg" alt="">   -->
+ <img src="<?php echo bloginfo('template_url'); ?>/assets/triangle.png" alt=""> 
+    <p><?php bloginfo( 'description' ); ?></p>
     <h1 class="siteTitle">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
