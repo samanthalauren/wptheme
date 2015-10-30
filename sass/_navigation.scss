@@ -1,18 +1,25 @@
-ul.menu {
-	margin: 5% 0;
-	padding: 0;
+#menu-menu-1 {
+	margin: 0 auto 60px;
+	padding: 10px 0;
+	// background: #ddc9c1;
+	width: 65%;
+	display: flex;
+	border-top: 1px solid #572b2c;
+	border-bottom: 1px solid #572b2c;
 	li {
 		display: inline;
-		font-family: 'Open Sans', sans-serif;
-		font-weight: 300;
+		font-family: 'Playfair Display', serif;
+		font-weight: 600;
+		font-size: 1.1rem;
 		padding:0;
-		margin: 15px;
-		text-decoration: underline;
-		
+		margin: 0 auto;
+		letter-spacing: .2rem;
 		a {
 			padding: 5px;
-			// color:  #7c9790;
-			color: #572b2c;
+			color:  #7c9790;
+		}
+		a:hover {
+			border-bottom: 2px solid #572b2c;
 		}
 	}
 }
@@ -22,7 +29,28 @@ ul.menu {
 	ul {
 		float: right;
 		display: block;
+		list-style: none;
 		margin: 0;
+		padding: 8px;
+		background: #ddc9c1;
+		width: 100%;
+		box-shadow: 0px 1px 5px -2px rgba(0,0,0,0.75);
+		li {
+			margin: 5px 15px;
+			float: right;
+		}
+		a {
+			color: #572b2c;
+		}
+	}
+}
+
+.footerNav {
+	ul {
+		display: flex;
+		list-style: none;
+		margin: 0;
+		padding: 8px;
 		background: #ddc9c1;
 		width: 100%;
 		li {

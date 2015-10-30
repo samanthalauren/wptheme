@@ -14,7 +14,7 @@
 
         <h2><?php the_title(); ?></h2>
         <div class="line"></div>
-        <?php the_content(); ?>
+        <div class="quote"> <?php the_content(); ?></div>
 
       <?php endwhile; // end the loop?>
       <h2>Featured Products</h2>
@@ -27,7 +27,7 @@
     </div>
 
        <h2>Recent Posts</h2>
-      <div class="line"></div>
+      <div class="line line2"></div>
 
       <?php 
       // the query
@@ -43,8 +43,7 @@
         <div class="home-posts">
           <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <div class="post">
-              <div class="line"></div>
-              <?php the_post_thumbnail('medium'); ?>
+              <?php the_post_thumbnail('large'); ?>
               <h4><?php the_title(); ?></h4>
               <div class="white"><?php the_excerpt(); ?></div> <!-- /.white -->
             </div> <!-- /.post -->

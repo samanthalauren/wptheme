@@ -3,10 +3,6 @@
 <div class="main" id='main'>
   <div class="container">
 
-     <div class="hero">
-          <?php //the_post_thumbnail( $full, $attr ); ?> 
-     </div>
-
 
     <div class="content">
       <?php // Start the loop ?>

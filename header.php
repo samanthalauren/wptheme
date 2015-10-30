@@ -6,9 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title><?php  wp_title('|', true, 'right'); ?></title>
   <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-
   <?php // Load our CSS ?>
-  <link href='https://fonts.googleapis.com/css?family=Nothing+You+Could+Do|Allura|Dawning+of+a+New+Day|Homemade+Apple|Josefin+Sans:400,600,300italic|Raleway:400,200,700|Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:400,700,900' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
   
@@ -26,17 +25,20 @@
     )); ?>
   </div>
   <div class="container">
- <img src="<?php echo bloginfo('template_url'); ?>/assets/triangle.png" alt=""> 
+
+ <div class="triangle">
+   <img src="<?php echo bloginfo('template_url'); ?>/assets/triangledark.png" alt=""> 
+ </div>
     <p><?php bloginfo( 'description' ); ?></p>
     <h1 class="siteTitle">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>
       </a>
     </h1>
-     <?php wp_nav_menu( array(
+  </div> <!-- /.container -->
+   <?php wp_nav_menu( array(
       'container' => false,
       'theme_location' => 'primary'
     )); ?> 
-  </div> <!-- /.container -->
 </header><!--/.header-->
 

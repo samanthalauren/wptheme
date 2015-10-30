@@ -1,5 +1,19 @@
+@font-face {
+    font-family: 'jellyka_saint-andrews_queenRg';
+    src: url('fonts/saint-andrews_queen-webfont.eot');
+    src: url('fonts/saint-andrews_queen-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/saint-andrews_queen-webfont.woff2') format('woff2'),
+         url('fonts/saint-andrews_queen-webfont.woff') format('woff'),
+         url('fonts/saint-andrews_queen-webfont.ttf') format('truetype'),
+         url('fonts/saint-andrews_queen-webfont.svg#jellyka_saint-andrews_queenRg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 a {
-	color: #7c9790;
+	// color: #7c9790;
+	color: #4c2526;
 	text-decoration: none;
 	&:hover {
 		// color: #D424B1;
@@ -13,6 +27,9 @@ h1 {
 
 p {
 	line-height: 1.5;
+	font-size: .85rem;
+	text-align: left;
+	letter-spacing: .04rem;
 }
 
 /*blockquotes*/
