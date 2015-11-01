@@ -45,7 +45,8 @@
             <div class="post">
               <?php the_post_thumbnail('large'); ?>
               <h4><?php the_title(); ?></h4>
-              <div class="white"><?php the_excerpt(); ?></div> <!-- /.white -->
+              <div class="white"><?php the_excerpt(); ?></div> 
+
             </div> <!-- /.post -->
           <?php endwhile; ?>
         </div> <!-- /.home-posts -->
@@ -57,8 +58,9 @@
         <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
       <?php endif; ?>
       
-
+<div class="emailContact"> 
        <?php the_field('home_email'); ?>
+</div>
     </div> <!-- /,content -->
 
   </div> <!-- /.container -->
