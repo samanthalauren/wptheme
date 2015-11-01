@@ -101,7 +101,6 @@ header {
 h2 {
 	font-family: 'jellyka_saint-andrews_queenRg';
 	text-transform: lowercase;
-	// color:  #7c9790;
 	color: #4c2526;
 	font-size: 2.8rem;
 	padding: 0;
@@ -157,6 +156,11 @@ h2 {
 		display: block;
 		width: 100px;
 		margin-top: 20px;
+		transition: all 1s;
+	}
+	.read-more:hover {
+		color: #ddc9c1;
+		background-color: #730526;
 	}
 }
 .emailContact {
@@ -180,6 +184,11 @@ h2 {
 		background-color: #ddc9c1;
 		border:1px solid #730526;
 		margin-bottom: 100px;
+		transition: all 1s;
+	}
+	input[type=submit]:hover {
+		color: #ddc9c1;
+		background-color: #730526;
 	}
 	input {
 		font-family: sans-serif;
@@ -220,9 +229,272 @@ h2 {
 	}
 }
 .page-id-11 { 
-	p {
+	form {
+		float: left;
+		p {
 		color: #730526;
+		float: left;
+		width: 100%;
+		}
+		p:last-of-type {
+		margin-top: -110px;
+		}
+		input[type=submit] {
+		width: 100px;
+
+		}
+	}
+	.desc {
+		font-family: 'Playfair Display', serif;
+	 	font-size: 1.2rem;
+	 	font-style: italic;
+	 	color: #4c2526;
+	 	width: 10%;
+	 	margin: -95px auto 70px;
+	 	text-align: center;
+	 	letter-spacing: .2rem;
+	 	float: none;
+	}
+	h4 {
+		font-family: 'jellyka_saint-andrews_queenRg';
+		text-transform: lowercase;
+		color: #4c2526;
+		font-size: 2.8rem;
+		padding: 0;
+		letter-spacing: 0.2rem;
+		margin: 60px 0 0 0;
+	}
+	div {
+		font-family: 'Playfair Display', serif;
+	 	font-size: 1.2rem;
+	 	letter-spacing: .2rem;
+	 	line-height: 2rem;
+	}
+	.acf-map {
+		margin-top: -150px;
 	}
 }
 
+//blog 
+
+.content.blog {
+	width: 60%;
+	float: left;
+	margin-left: 90px;
+	article {
+		background-color:#e8d7d0;
+		padding: 20px;
+		margin: 50px;	
+		.entry-title {
+			text-align: left;
+			margin-top:0;
+			a {
+				color: #9fb7b1;
+			}
+		}
+	}
+	footer {
+		background-color: #f7eeea; 
+		width: 90%;
+		margin: 20px auto 50px;
+	}
+}
+
+//blog post
+
+.single {
+	.content {
+	width: 60%;
+	float: left;
+	margin: 50px 20px 90px 90px;
+	padding: 20px;
+	background-color: #e8d7d0;
+	h1 {
+		color: #9fb7b1;
+		font-family: 'jellyka_saint-andrews_queenRg';
+		text-transform: lowercase;
+		font-size: 4rem;
+	}
+
+ }
+}
+
+//STORE 
+.woocommerce {
+	#main {
+		padding: 0 10%;
+	}
+}
+
+
+//MEDIA QUERIES 
+
+@media all and (max-width:850px) {
+	header {
+		p {
+		 	width: 30%;
+		 	margin: 0px auto 10px;
+		}
+	}
+	.featuredProducts {
+	margin: 50px 15px 95px;
+	img {
+		width: 50%;
+	}
+	}
+	.page-id-11 .desc { 
+		width: 50%;
+		margin: 0px auto 10px;	
+	}
+	.sidebar {
+		width: 25%;
+	}
+}
+
+@media all and (max-width: 700px ) {
+	#menu-menu-1 {
+	width: 85%;
+	display: flex;
+		li {
+			font-weight: 400;
+			width: 40%;
+			text-align: center;
+		}
+	}
+	.footerNav {
+	ul {
+		padding: 2px;
+		li {
+			margin: 5px 10px;
+		}
+	}
+}
+
+.page-id-11 {
+	form {
+			p:last-of-type {
+			margin-top: -50px;
+			margin-left: 80px;
+			}
+			input[type=submit] {
+			width: 100px;
+
+			}
+		}
+	}
+
+	#search-2 {
+		display: none;
+	}
+}
+
+@media all and (max-width: 500px) {
+	#menu-menu-1 {
+	width: 100%;
+		li {
+			font-size: 1rem;
+			text-align: center;
+		}
+	}
+	.featuredProducts {
+	img {
+		width: 90%;
+	}
+	}
+	.home-posts {
+	flex-direction: column;
+	h4 {
+		margin: 15px 35px ;
+	}
+	}
+	.emailContact {
+	margin-top: 10%;
+	margin-bottom: 5%;
+	p {
+		font-size: 1.9rem;
+		letter-spacing: .2rem;
+		margin-bottom: -7px;
+	}
+	input.wpcf7-form-control {
+		width: 350px;
+	}
+}
+.footerNav {
+	ul {
+		padding: 0px;
+		li {
+			margin: 5px 40px 5px -20px;
+		}
+	}
+}
+.image {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	p {
+		width: 90%;
+	}
+	img {
+		margin: 30px auto;
+	}
+}
+
+.page-id-11 { 
+	.content {
+		width: 40%;
+		margin: 0 -10px;
+	}
+	h2 {
+		width: 100%;
+		margin: 0 90px 0 0;
+		padding-left: 150px;
+		text-align: center;
+	}
+	.line {
+		display: none;
+	}
+	.container {
+		.acf-map {
+			height: 300px;
+			width: 300px;
+			margin: 0 70px 20px 60px;
+		}
+	}
+	form {
+		float: left;
+		width: 100%;
+		p {
+		color: #730526;
+		width: 80%;
+		font-size: 1rem;
+		}
+		p:last-of-type {
+		margin-top: -110px;
+		}
+		input[type=submit] {
+		width: 100px;
+		}
+	}
+	}
+	.content.blog {
+	width: 100%;
+	display: block;
+	margin: 0;
+	footer {
+		background-color: #f7eeea; 
+		width: 90%;
+		margin: 20px auto 50px;
+	}
+	}
+	.sidebar {
+		display: none;
+	}
+
+	.single {
+	.content {
+	width: 100%;
+	margin: 0 auto;
+ }
+}
+}
 

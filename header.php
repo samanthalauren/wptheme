@@ -29,7 +29,7 @@
  <div class="triangle">
    <img src="<?php echo bloginfo('template_url'); ?>/assets/triangledark.png" alt=""> 
  </div>
-    <p><?php bloginfo( 'description' ); ?></p>
+    <p class="desc"><?php bloginfo( 'description' ); ?></p>
     <h1 class="siteTitle">
       <a href="<?php echo home_url( '/' ); ?>" title="<?php bloginfo( 'name', 'display' ); ?>" rel="home">
         <?php bloginfo( 'name' ); ?>

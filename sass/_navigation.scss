@@ -1,7 +1,7 @@
 #menu-menu-1 {
 	margin: 0 auto 60px;
 	padding: 10px 0;
-	// background: #ddc9c1;
+	position: relative;
 	width: 65%;
 	display: flex;
 	border-top: 1px solid #572b2c;
@@ -41,6 +41,10 @@
 		}
 		a {
 			color: #572b2c;
+			transition: all 1s;
+		}
+		a:hover {
+			color: white;
 		}
 	}
 }
@@ -50,15 +54,19 @@
 		display: flex;
 		list-style: none;
 		margin: 0;
-		padding: 8px;
+		padding: 2px;
 		background: #ddc9c1;
 		width: 100%;
 		li {
-			margin: 5px 15px;
+			margin: 5px 20px;
 			float: right;
 		}
 		a {
 			color: #572b2c;
+			transition: all 1s;
+		}
+		a:hover {
+			color: white;
 		}
 	}
 }
